@@ -19,13 +19,17 @@ html, body {
 }
 
 body {
-  background-color: $color-dark-grey;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 10px;
 }
 
 .wrapper {
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  border-radius: 20px;
   display: grid;
-  height: 100vh;
+  margin: 5rem;
   grid-template-columns: 40% 40%;
   justify-content: center;
   align-items: center;

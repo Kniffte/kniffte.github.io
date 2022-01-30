@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 $color-dark-grey: #1a1a1b;
 $color-light-grey: #333f44;
@@ -7,7 +8,8 @@ $color-green: #4ecca3;
 $color-orange: #f96d00;
 
 html, body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Nunito', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -19,31 +21,33 @@ html, body {
 }
 
 body {
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
-.wrapper {
+.container {
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  padding: 2.5rem;
+
+  > div {
+    color: #eeeeee;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.left-mechanical {
   background-color: rgba($color: #000000, $alpha: 0.2);
-  border-radius: 20px;
-  display: grid;
-  margin: 5rem;
-  grid-template-columns: 40% 40%;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 1rem;
+  border-radius: 2rem 0 0 2rem;
 }
 
-.container-mechanical {
-  background-color: #4ecca3;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.container-software {
-  background-color: #f96d00;
-  margin: 1rem 0;
-  text-align: center;
+.right-software {
+  background-color: rgba($color: #000000, $alpha: 0.25);
+  border-radius: 0 2rem 2rem 0;
 }

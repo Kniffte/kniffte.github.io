@@ -28,26 +28,52 @@ body {
   background: #c2e59c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  height: 1500px;
   display: flex;
-  padding: 2.5rem;
+  // padding: 2.5rem;
 
   > div {
     color: #eeeeee;
     height: 100%;
     display: flex;
     flex: 1;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
+    margin-top: 3rem;
   }
 }
 
-.left-mechanical {
+div.left-mechanical {
   background-color: rgba($color: #000000, $alpha: 0.2);
-  border-radius: 2rem 0 0 2rem;
 }
 
-.right-software {
+div.right-software {
   background-color: rgba($color: #000000, $alpha: 0.25);
-  border-radius: 0 2rem 2rem 0;
+}
+
+nav {
+  background-color: #f96d00;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    li a {
+      text-decoration: none;
+      color: #eeeeee;
+      font-size: 1.1rem;
+      padding-right: 2rem;
+    }
+  }
 }

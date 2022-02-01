@@ -41,7 +41,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem;
+}
+
+.container > div h2 {
+  margin-top: 5rem;
 }
 
 div.left-mechanical {

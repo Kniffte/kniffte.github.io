@@ -30,7 +30,7 @@ body {
   background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 1500px;
   display: flex;
-  // padding: 2.5rem;
+  padding: 2.5rem;
 
   > div {
     color: #eeeeee;
@@ -41,42 +41,44 @@ body {
     justify-content: center;
 
     h2 {
-      margin-top: 5rem;
+      margin-top: 2rem;
     }
   }
 }
 
 div.left-mechanical {
   background-color: rgba($color: #000000, $alpha: 0.2);
+  position: relative;
 }
 
 div.right-software {
   background-color: rgba($color: #000000, $alpha: 0.25);
+  position: relative;
 }
 
-nav {
-  background-color: #f96d00;
+nav.left-nav {
+  background-color: #ffb71c;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 3rem;
-  width: 100%;
-  
+  height: 100%;
+  // margin-top: 3rem;
+
   ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     list-style-type: none;
 
     li a {
       text-decoration: none;
       color: #eeeeee;
       font-size: 1.1rem;
-      padding-right: 2rem;
     }
   }
 }

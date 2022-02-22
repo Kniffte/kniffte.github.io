@@ -7,12 +7,9 @@ $color-white: #eeeeee;
 $color-green: #4ecca3;
 $color-orange: #f96d00;
 
-html, body {
-  font-family: 'Montserrat', sans-serif;
-  // font-family: 'Nunito', sans-serif;
-  padding: 0;
-  margin: 0;
-}
+// ---------------------
+// basics & resets start
+// ---------------------
 
 *,
 *:after,
@@ -20,9 +17,34 @@ html, body {
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-size: 0.625rem;
+  min-height: 100vh;
+  line-height: 1.5;
 }
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// ---------------------
+// basics & resets end
+// ---------------------
+
 
 .container {
   background: #c2e59c;  /* fallback for old browsers */
